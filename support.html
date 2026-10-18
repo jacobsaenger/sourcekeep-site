@@ -24,17 +24,19 @@
 
     <h2>Recording</h2>
     <h3>Which languages does Sourcekeep transcribe?</h3>
-    <p>English. Live recording uses iOS’s on-device recognition for English (United States), and the speech model built into the app for imported files is an English model.</p>
+    <p>English. Live recording uses iOS’s on-device recognition, for the English of your iPhone’s region (for example British, Australian or Indian English) where iOS has it, otherwise American English; you can choose another in Settings → Transcription. The speech model built into the app for imported files is an English model.</p>
     <h3>“On-device recognition is not available for this language on this device”</h3>
     <p>Sourcekeep only uses speech recognition that runs on your iPhone. If iOS reports that on-device recognition isn’t available, Sourcekeep stops instead of sending your audio to a server. It can help to check that Dictation is turned on (Settings → General → Keyboard) and then try again. You can still import a recording: imports use the model built into the app.</p>
     <h3>“Speech recognition is turned off for this device”</h3>
     <p>Turn on Siri &amp; Dictation in Settings, and allow Microphone and Speech Recognition for Sourcekeep in the Settings app.</p>
     <h3>Who is speaking?</h3>
-    <p>With Auto-Detect on, Sourcekeep tells voices apart as you record. You can also tap who is speaking, and touch and hold a name to rename it. After a recording stops, Sourcekeep re-transcribes it with its built-in model and detects speakers again, to improve on the live text.</p>
+    <p>When a recording stops, Sourcekeep re-transcribes it with its built-in model and tells the voices apart from the recording, on your iPhone. Then name them in the session: tap a speaker’s name above a line to change who said it, or rename a speaker everywhere at once.</p>
     <h3>Pausing</h3>
     <p>Tap pause in the recording bar for an interruption, and resume when you’re ready; the pause isn’t counted in the recording’s times. A phone call pauses the recording for you. Recording carries on when the iPhone is locked or you switch apps.</p>
+    <h3>Warnings while recording</h3>
+    <p>The recording screen shows which microphone is in use. If nothing has been heard for a minute (a Bluetooth microphone that turned off, a covered microphone), or the iPhone has room for less than 10 more minutes, Sourcekeep says so on screen, and with a silent notification if you’ve allowed notifications and aren’t in the app. When you tap Record, it tells you if there isn’t room for two hours.</p>
     <h3>If the app closes during a recording</h3>
-    <p>Sourcekeep saves the transcript as it goes. If the app is closed or the battery runs out before you stop, the next launch brings the recording back as a session. The audio is kept when iOS left a playable file; otherwise you get the transcript without playback.</p>
+    <p>Sourcekeep saves the transcript as it goes. If the app is closed or the battery runs out before you stop, the next launch brings the recording back as a session. The audio comes back too, up to the moment the app closed.</p>
     <h3>Bookmarks</h3>
     <p>Tap the bookmark button while recording to mark the moment, or bookmark a line later while you listen. Bookmarks show as marks on the playback bar.</p>
     <h3>Starting a recording quickly</h3>
@@ -47,6 +49,8 @@
     <p>Long recordings take a few minutes. You can leave Sourcekeep while it works and, if you allow notifications, it tells you when the transcript is ready.</p>
     <h3>Files longer than 15 minutes</h3>
     <p>Importing files longer than 15 minutes is part of Sourcekeep Pro. Recording in the app has no such limit.</p>
+    <h3>Files longer than 3 hours</h3>
+    <p>Transcribing on the iPhone takes memory, so files longer than 3 hours can’t be imported: split them into shorter parts first. A recording made in the app that runs over 3 hours keeps its live transcript; it isn’t transcribed again when you stop, so its speakers aren’t told apart.</p>
 
     <h2>Reviewing and exporting</h2>
     <h3>Finding something</h3>
@@ -55,8 +59,12 @@
     <p>Tap the title at the top of a session, or touch and hold a session in the list.</p>
     <h3>Correcting a transcript</h3>
     <p>Tap a speaker’s name above a line to change who said it. Tap the “…” on a line, or touch and hold it, to open the editor. Correcting the words, bookmarking and deleting a line are free. Splitting and merging lines, checking them off and tagging [inaudible] are part of Sourcekeep Pro.</p>
+    <h3>Quoting a line</h3>
+    <p>In a line’s editor, Copy Quote copies the line with where it came from, ready to paste: “…” — speaker, session, date, and the time in the recording.</p>
+    <h3>Listening back</h3>
+    <p>Tap the speed on the right of the player (1×) to listen at 1.25×, 1.5×, 2× or 0.75×; Sourcekeep keeps the speed for your next session. After a pause, play starts two seconds back, so you hear the end of the sentence again.</p>
     <h3>Export formats</h3>
-    <p>Plain text is free. Sourcekeep Pro adds Word (for NVivo, MAXQDA and ATLAS.ti), a spreadsheet (CSV), PDF, Markdown, subtitles (SRT and WebVTT) and JSON. The file is made on your iPhone and you choose where it goes.</p>
+    <p>Plain text is free. Sourcekeep Pro adds Word (laid out for MAXQDA and ATLAS.ti: each turn starts with the speaker and ends with its timestamp, so they link it to the recording and can code by speaker), an NVivo transcript (a text file of Timespan, Speaker and Content columns; tick “File includes header row” when importing), a spreadsheet (CSV), PDF, Markdown, subtitles (SRT and WebVTT) and JSON. The file is made on your iPhone and you choose where it goes.</p>
     <h3>Anonymizing</h3>
     <p>Anonymize (Pro) replaces a name or detail with a code, or redacts it, across a whole session, including the title and speaker names. It changes the transcript, not the audio; you can delete the audio and keep the transcript.</p>
 
@@ -75,6 +83,12 @@
     <p>Sourcekeep’s data is part of your iPhone backup. Restoring a backup, or transferring directly from your old iPhone, brings your sessions with you.</p>
     <h3>Deleting</h3>
     <p>Swipe a session to delete it and its recording. “Delete Recording, Keep Transcript” in a session’s menu removes only the audio. Deleting the app removes everything.</p>
+    <h3>Locking the app</h3>
+    <p>In Settings (the gear on the Sessions tab), turn on Lock with Face ID and choose how soon it locks. A recording carries on while the app is locked. If Face ID fails, your iPhone passcode unlocks it.</p>
+    <h3>Deleting recordings automatically</h3>
+    <p>Settings → Delete Recordings removes each recording 7, 30 or 90 days after it was made, as many ethics protocols require. It happens the first time Sourcekeep is opened after that day, since it can’t run while the app is closed. Only the audio goes; the transcript stays. A session shows the date its recording will be deleted.</p>
+    <h3>Exporting everything</h3>
+    <p>Settings → Export Everything makes one file with every session: transcripts as plain text and the recordings, plus Word and JSON with Sourcekeep Pro. It is made on your iPhone and you choose where it goes.</p>
     <h3>For an ethics or IRB application</h3>
     <p>The app’s Privacy &amp; Data screen (tap “On-device” on the Record tab) has a paragraph you can copy into your application.</p>
 
